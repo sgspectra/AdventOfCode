@@ -3,7 +3,7 @@ x_pos = 0
 y_pos = 0
 
 #open input file and read first line
-input_file = open("input.txt")
+input_file = open("day2/input.txt")
 command = input_file.readline()
 
 #while the input file is not at EOF

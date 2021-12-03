@@ -1,4 +1,4 @@
-input_file = open("input.txt")
+input_file = open("day1/input.txt")
 #get the first value from the list
 previous_value = input_file.readline()
 #get the next value in the list
