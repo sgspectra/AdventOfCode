@@ -1,8 +1,8 @@
 #open the input file
 input_file = open("day4/input.txt")
 #read the numbers from the first line into an array
-called_numbers = input_file.readline()
-called_number_array = [int(i) for i in called_numbers.split(',')]
+numbers_to_call = input_file.readline()
+numbers_to_call_array = [int(i) for i in numbers_to_call.split(',')]
 #consume /n in input file
 line = input_file.readline()
 
@@ -49,5 +49,18 @@ while line != "":
     array_of_rows.append(a)
     array_of_columns.append(b)
 
+#call the first 5 numbers because a minimum of 5 is needed for a winner
+count = 0
+called_numbers = []
+while count < 5:
+    called_numbers.append(numbers_to_call_array.pop(0))
+    count += 1
+
+print(called_numbers)
+
+#function to determine if there is a bingo
+def bingoSearch(call_numbers, boards):
+    for x in boards:
+        
 
 
