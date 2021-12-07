@@ -36,10 +36,18 @@ def createColFromRow(array_of_rows):
         col_array.append(col)
         count += 1
     return col_array
+       
+#arrays to hold the array of rows and the array of columns
+#ex array_of_rows[0] will print all the rows in the first board
+array_of_rows = []
+array_of_columns = []
 
+#create the arrays of rows and columns
 while line != "":
     a, line = createRowArray(input_file)
-    print(a)
-    print(createColFromRow(a))
+    b = createColFromRow(a)
+    array_of_rows.append(a)
+    array_of_columns.append(b)
+
 
 
